@@ -13,6 +13,7 @@ I WILL TAKE NO RESPONSIBILITY FOR ANY DAMAGE. IF YOU MESS THING UP I WILL LAUGH 
 | ---: | :--- |
 | ``OpenCore`` | 0.9.7 (RELEASE) |
 | ``Ventura`` | 13 |
+| ``SMBIOS`` | MacBookPro15,3 |
 
 ## Hardware
 | | Device | macOS 13 Ventura compatibility |
