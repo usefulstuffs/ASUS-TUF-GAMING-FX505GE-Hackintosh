@@ -39,6 +39,6 @@ I WILL TAKE NO RESPONSIBILITY FOR ANY DAMAGE. IF YOU MESS THING UP I WILL LAUGH 
 * [RehabMan](https://github.com/RehabMan) - for ACPI patching guides
 
 ### Where to begin
-* Use [Dortania's guide](https://dortania.github.io/OpenCore-Install-Guide) for doing config.plist and create Bootable USB.
+* Check [our wiki](https://github.com/usefulstuffs/ASUS-TUF-GAMING-FX505GE-Hackintosh/wiki) to create bootable USB or doing config.plist stuffs.
 * Use [Google](https://google.com) or [Bing](https://bing.com) or whatever search engine to search for problem fixes.
 * Check [OpenCore Forums](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/FORUMS.md) also for problem fixes and for known issues.
