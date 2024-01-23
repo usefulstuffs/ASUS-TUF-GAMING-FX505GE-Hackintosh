@@ -8,14 +8,40 @@ This repository has the purpouse to only share my hackintosh (OpenCore) configur
 I don't guarantee it will work for you as hardware might differ.
 I WILL TAKE NO RESPONSIBILITY FOR ANY DAMAGE. IF YOU MESS THING UP I WILL LAUGH AT YOU!
 
-## Software
+## Hackintoshing the laptop
+<details>
+  <summary><strong> GETTING STARTED </strong></summary>
+  <br>
+  
+  > ### Windows
+  1. Download the [EFI](https://github.com/usefulstuffs/ASUS-TUF-GAMING-FX505GE-Hackintosh/releases) from this repository
+  2. Download [MacRecovery for Windows](https://github.com/usefulstuffs/macrecovery.exe/releases/latest/download/macrecovery.exe)
+  3. Take an USB with atleast 4 GB and completely format it with rufus (filesystem must be FAT32 or Large FAT32).
+  4. Copy the EFI folder from the zip you have downloaded.
+  5. Now go to the downloads and open a command prompt here.
+  6. Run the command ``macrecovery.exe -b Mac-B4831CEBD52A0C4C -m 00000000000000000 download`` to download the recovery of macOS Ventura
+  7. When it finishes, copy the ``com.apple.recovery.boot`` to the root of the USB.
+  8. The root of the USB should now have 2 folders: ``com.apple.recovery.boot`` and ``EFI``
+  9. Now you might want to generate a serial for your "Fake Mac", for this use the [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) tool.
+  10. Now reboot and spam esc until you see the boot menu.
+  11. Select with the arrow keys your USB, then select again the name of the USB.
+  12. Done, now install macOS
+</details>
+
+<details>
+<summary><strong> SOFTWARE </strong></summary>
+  
 | | Version |
 | ---: | :--- |
 | ``OpenCore`` | 0.9.7 (RELEASE) |
 | ``Ventura`` | 13 |
 | ``SMBIOS`` | MacBookPro15,3 |
 
-## Hardware
+</details>
+
+<details>
+<summary><strong> HARDWARE </strong></summary>
+  
 | | Device | macOS 13 Ventura compatibility |
 | ---: | :--- | :--- |
 | ``Chipset`` | Mobile Intel Chipset | No issues |
@@ -34,12 +60,19 @@ I WILL TAKE NO RESPONSIBILITY FOR ANY DAMAGE. IF YOU MESS THING UP I WILL LAUGH 
 | ``Keyboard`` | Backlight Keyboard Multicolor | After waking up from sleep backlights are not working. |
 | ``Touchpad`` | ELAN1200 Touchpad | Not working for now. Please use an [USB mouse](https://www.amazon.com/s?k=usb+mouse). |
 
-## Thanks to...
+</details>
+
+<details>
+  <summary><strong> TROUBLESHOOTING </strong></summary>
+  
+  * Use [Google](https://google.com) or [Bing](https://bing.com) or whatever search engine to search for problem fixes.
+  * Check [OpenCore Forums](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/FORUMS.md) also for problem fixes and for known issues.
+</details>
+
+<details>
+<summary><strong> CREDITS </strong></summary>
+  
 * [Dortania](https://dortania.github.io/) - for Vanilla guides
 * [Acidanthera](https://github.com/acidanthera) - for OpenCore and lots of kexts
 * [RehabMan](https://github.com/RehabMan) - for ACPI patching guides
-
-### Where to begin
-* Check [our wiki](https://github.com/usefulstuffs/ASUS-TUF-GAMING-FX505GE-Hackintosh/wiki) to create bootable USB or doing config.plist stuffs.
-* Use [Google](https://google.com) or [Bing](https://bing.com) or whatever search engine to search for problem fixes.
-* Check [OpenCore Forums](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/FORUMS.md) also for problem fixes and for known issues.
+</details>
