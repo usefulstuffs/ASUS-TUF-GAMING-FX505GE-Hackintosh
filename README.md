@@ -84,7 +84,9 @@ Guide is coming soon.
 
 <details>
   <summary><strong> TROUBLESHOOTING </strong></summary>
-  
+
+  * Check the [OpenCore Troubleshooting guide](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/troubleshooting.html)
+  * [Turn on Debugging](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html). You might also want to see [Debugging in depth](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/kernel-debugging.html)
   * Use [Google](https://google.com) or [Bing](https://bing.com) or whatever search engine to search for problem fixes.
   * Check [OpenCore Forums](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/FORUMS.md) also for problem fixes and for known issues.
 </details>
