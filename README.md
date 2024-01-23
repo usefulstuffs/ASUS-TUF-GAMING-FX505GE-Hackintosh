@@ -45,7 +45,7 @@ Guide is coming soon.
 <details>
   <summary><strong> MULTIBOOTING </strong></summary>
 
-  If you want to multiboot MacOS with other OS, follow the [dedicated OpenCore guide](https://dortania.github.io/OpenCore-Multiboot/)
+  If you want to multiboot MacOS with other OS, follow the [dedicated OpenCore guide](https://dortania.github.io/OpenCore-Multiboot/). If you want to use BootCamp for dualbooting MacOS and Windows, follow the instructions on [this page](https://dortania.github.io/OpenCore-Post-Install/multiboot/bootcamp.html).
 </details>
 
 <details>
