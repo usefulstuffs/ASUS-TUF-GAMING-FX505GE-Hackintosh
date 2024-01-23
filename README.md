@@ -43,6 +43,12 @@ Guide is coming soon.
 </details>
 
 <details>
+  <summary><strong> MULTIBOOTING </strong></summary>
+
+  If you want to multiboot MacOS with other OS, follow the [dedicated OpenCore guide](https://dortania.github.io/OpenCore-Multiboot/)
+</details>
+
+<details>
 <summary><strong> SOFTWARE </strong></summary>
   
 | | Version |
