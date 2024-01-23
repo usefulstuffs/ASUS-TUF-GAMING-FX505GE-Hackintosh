@@ -1,4 +1,4 @@
-<img src="https://github.com/usefulstuffs/ASUS-TUF-GAMING-FX505GE-Hackintosh/blob/main/66936053_8228631142.jpg?raw=true" width="30%" height="30%">
+<a href="https://www.asus.com/it/supportonly/fx505ge/helpdesk_knowledge/"><img src="https://github.com/usefulstuffs/ASUS-TUF-GAMING-FX505GE-Hackintosh/blob/main/66936053_8228631142.jpg?raw=true" width="30%" height="30%"></a>
 
 # ASUS TUF GAMING FX505GE Hackintosh
 Install macOS 13 Ventura on ASUS TUF GAMING FX505GE
