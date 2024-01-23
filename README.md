@@ -74,7 +74,7 @@ Guide is coming soon.
 | ``Screen`` | 15.6" Full HD 60Hz, 1920 x 1080 IPS |  No issues |
 | ``Webcam`` | Built-in IR HD webcam (1MP / 720P) |  No issues |
 | ``WiFi`` | Intel(R) Wireless-AC 9462 | No issues |
-| ``Input & Output`` | USB 3.1 Gen 1 (USB-A) x3 | No issues |
+| ``Input & Output`` | USB 3.1 Gen 1 (USB-A) x2 + USB 2.0 x1 | No issues |
 | ``Soundboard`` | Realtek ALC235 | No issues |
 | ``Battery`` | 4 Cells, 48Whr | About 3-5h after proper Power Management configuration. |
 | ``Keyboard`` | Backlight Keyboard Multicolor | After waking up from sleep backlights are not working. |
