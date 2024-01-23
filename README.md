@@ -4,7 +4,7 @@
 Install macOS 13 Ventura on ASUS TUF GAMING FX505GE
 
 ## Disclaimer
-This repository has the purpouse to only share my hackintosh (OpenCore) configuration.
+This repository has the purpouse to only share my hackintosh (OpenCore) configuration and maybe help you hackintosh this laptop.
 I don't guarantee it will work for you as hardware might differ.
 I WILL TAKE NO RESPONSIBILITY FOR ANY DAMAGE. IF YOU MESS THING UP I WILL LAUGH AT YOU!
 
@@ -25,7 +25,21 @@ I WILL TAKE NO RESPONSIBILITY FOR ANY DAMAGE. IF YOU MESS THING UP I WILL LAUGH 
   9. Now you might want to generate a serial for your "Fake Mac", for this use the [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) tool.
   10. Now reboot and spam esc until you see the boot menu.
   11. Select with the arrow keys your USB, then select again the name of the USB.
-  12. Done, now install macOS
+  12. If you get to the language picker, congrats! You have booted successfully macOS. Now the install is like a real Mac.
+  13. Select disk utility and erase ENTIRELY your disk by enabling all volumes
+  14. Give it a name, personally I reccommend "Macintosh SSD"
+  15. Once it's done, close disk utility
+  16. Connect to Wi-Fi or connect via Ethernet
+  17. Select install macOS Ventura
+  18. Hit next and agree the license agreement
+  19. Select your disk and wait until it installs
+  20. You should now get the macOS configuration, complete it.
+  21. Now you need to mount the EFI partition or else you can't boot macOS without the USB. You'll use [MountEFI](https://github.com/corpnewt/MountEFI).
+  22. Now copy the EFI golder from the USB to the EFI partition you see in finder and you can finally disconnect the USB.
+  23. Eject also the EFI partition to unmount it
+  24. Enjoy.
+> ### Linux
+Guide is coming soon.
 </details>
 
 <details>
