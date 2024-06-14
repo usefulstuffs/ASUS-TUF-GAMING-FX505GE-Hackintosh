@@ -19,7 +19,7 @@ I WILL TAKE NO RESPONSIBILITY FOR ANY DAMAGE. IF YOU MESS THING UP I WILL LAUGH 
   3. Take an USB with atleast 4 GB and completely format it with rufus (filesystem must be FAT32 or Large FAT32).
   4. Copy the EFI folder from the zip you have downloaded.
   5. Now go to the downloads and open a command prompt here.
-  6. Run the command ``macrecovery.exe -b Mac-B4831CEBD52A0C4C -m 00000000000000000 download`` to download the recovery of macOS Ventura
+  6. Run the command ``macrecovery.exe -b Mac-7BA5B2D9E42DDD94 -m 00000000000000000 -os latest download`` to download the recovery of macOS Sonoma
   7. When it finishes, copy the ``com.apple.recovery.boot`` to the root of the USB.
   8. The root of the USB should now have 2 folders: ``com.apple.recovery.boot`` and ``EFI``
   9. Now you might want to generate a serial for your "Fake Mac", for this use the [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) tool.
@@ -30,7 +30,7 @@ I WILL TAKE NO RESPONSIBILITY FOR ANY DAMAGE. IF YOU MESS THING UP I WILL LAUGH 
   14. Give it a name, personally I reccommend "Macintosh SSD"
   15. Once it's done, close disk utility
   16. Connect to Wi-Fi or connect via Ethernet
-  17. Select install macOS Ventura
+  17. Select Reinstall macOS Sonoma
   18. Hit next and agree the license agreement
   19. Select your disk and wait until it installs
   20. You should now get the macOS configuration, complete it.
