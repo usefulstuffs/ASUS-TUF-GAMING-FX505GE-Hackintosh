@@ -6,6 +6,8 @@
 	<string>Useful Stuffs</string>
 	<key>#MODEL</key>
 	<string>ASUS TUF GAMING FX505GE</string>
+	<key>#SMBIOS</key>
+	<string>MacBookPro15,3</string>
 	<key>#GITHUB PAGE</key>
 	<string>https://github.com/usefulstuffs/ASUS-TUF-GAMING-FX505GE-Hackintosh</string>
 	<key>ACPI</key>
@@ -400,24 +402,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>UTBMap.kext</string>
-				<key>Comment</key>
-				<string>UTBMap.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
 				<string>VirtualSMC.kext</string>
@@ -616,24 +600,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>BrightnessKeys.kext</string>
-				<key>Comment</key>
-				<string>BrightnessKeys.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrightnessKeys</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>IntelBTPatcher.kext</string>
 				<key>Comment</key>
 				<string>IntelBTPatcher.kext</string>
@@ -738,6 +704,24 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>UTBMap.kext</string>
+				<key>Comment</key>
+				<string>UTBMap.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -757,6 +741,22 @@
 				<key>Strategy</key>
 				<string>Disable</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>Identifier</key>
+				<string>com.apple.iokit.IOSkywalkFamily</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>Strategy</key>
+				<string>Exclude</string>
+			</dict>
 		</array>
 		<key>Emulate</key>
 		<dict>
@@ -765,7 +765,7 @@
 			<key>Cpuid1Mask</key>
 			<data></data>
 			<key>DummyPowerManagement</key>
-			<false/>
+			<true/>
 			<key>MaxKernel</key>
 			<string></string>
 			<key>MinKernel</key>
@@ -796,6 +796,32 @@
 		</array>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Replace</key>
+				<data>uAEAAADD</data>
+				<key>MinKernel</key>
+				<string>20.0.0</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>Mask</key>
+				<data></data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Identifier</key>
+				<string>com.apple.iokit.IOHIDFamily</string>
+				<key>Find</key>
+				<data></data>
+				<key>Enabled</key>
+				<true/>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Base</key>
+				<string>_isSingleUser</string>
+			</dict>
 			<dict>
 				<key>Arch</key>
 				<string>Any</string>
@@ -1100,7 +1126,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmCfgLock</key>
 			<true/>
 			<key>AppleXcpmExtraMsrs</key>
@@ -1183,9 +1209,9 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Acidanthera\GoldenGate</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -1299,6 +1325,8 @@
 	</dict>
 	<key>NVRAM</key>
 	<dict>
+		<key>LegacyEnable</key>
+		<true/>
 		<key>Add</key>
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
@@ -1345,7 +1373,7 @@
 			</array>
 		</dict>
 		<key>LegacyOverwrite</key>
-		<false/>
+		<true/>
 		<key>LegacySchema</key>
 		<dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -1432,9 +1460,9 @@
 			<key>JumpstartHotPlug</key>
 			<false/>
 			<key>MinDate</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>MinVersion</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
@@ -1529,6 +1557,18 @@
 				<false/>
 				<key>Path</key>
 				<string>ResetNvramEntry.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>OpenCanopy.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
@@ -1649,7 +1689,7 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<true/>
+			<false/>
 			<key>ReloadOptionRoms</key>
 			<false/>
 			<key>RequestBootVarRouting</key>

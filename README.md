@@ -1,7 +1,7 @@
 <a href="https://www.asus.com/it/supportonly/fx505ge/helpdesk_knowledge/"><img src="https://github.com/usefulstuffs/ASUS-TUF-GAMING-FX505GE-Hackintosh/blob/main/66936053_8228631142.jpg?raw=true" width="30%" height="30%"></a>
 
 # ASUS TUF GAMING FX505GE Hackintosh
-Install macOS 13 Ventura on ASUS TUF GAMING FX505GE
+Install macOS 14 Sonoma on ASUS TUF GAMING FX505GE
 
 ## Disclaimer
 This repository has the purpouse to only share my hackintosh (OpenCore) configuration and maybe help you hackintosh this laptop.
@@ -53,8 +53,8 @@ Guide is coming soon.
   
 | | Version |
 | ---: | :--- |
-| ``OpenCore`` | 0.9.7 (RELEASE) |
-| ``Ventura`` | 13 |
+| ``OpenCore`` | 1.0.0 (RELEASE) |
+| ``Sonoma`` | 14 |
 | ``SMBIOS`` | MacBookPro15,3 |
 
 </details>
@@ -62,7 +62,7 @@ Guide is coming soon.
 <details>
 <summary><strong> HARDWARE </strong></summary>
   
-| | Device | macOS 13 Ventura compatibility |
+| | Device | macOS 14 Sonoma compatibility |
 | ---: | :--- | :--- |
 | ``Chipset`` | Mobile Intel Chipset | No issues |
 | ``CPU`` | Intel Core i7-8750H processor, 6 Cores / 12 Threads, 2.2GHz / 4.1GHz, 9MB Cache | No issues |
